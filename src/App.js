@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import Header from './components/Header';
 import NewsList from './components/NewsList';
 import SearchForm from './components/SearchForm';
+import Footer from './components/Footer';
 
 const API_KEY = process.env.REACT_APP_SECRET_KEY;
 
@@ -31,6 +32,7 @@ class App extends Component {
           <SearchForm getNews={this.getNews} />
           <NewsList news={this.state.news} />
         </div>
+        <Footer />
       </Fragment>
     );
   }
