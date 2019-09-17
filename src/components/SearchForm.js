@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class SearchForm extends Component {
   state = {
@@ -38,5 +39,9 @@ class SearchForm extends Component {
     );
   }
 }
+
+SearchForm.propTypes = {
+  getNews: PropTypes.func.isRequired
+};
 
 export default SearchForm;
